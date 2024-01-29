@@ -9,7 +9,7 @@ public class User {
     protected final int age;
 
     // Constructor with UserBuilder as input
-    public User(UserBuilder builder) {
+    private User(UserBuilder builder) {
         this.firstName = builder.firstName;
         this.lastName = builder.lastName;
         this.email = builder.email;

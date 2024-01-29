@@ -1,6 +1,7 @@
 package builderPattern;
 
 import java.util.*;
+
 public class ECommerceApp {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
