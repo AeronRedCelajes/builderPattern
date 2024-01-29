@@ -10,11 +10,21 @@ public class ECommerceApp {
         System.out.println("Please enter your user details to proceed.");
         System.out.println();
 
-        System.out.print("Enter your first name: ");
-        String firstName = userInput.nextLine();
+        String firstName;
+        do {
+            System.out.print("Enter your first name: ");
+            firstName = userInput.nextLine().trim();
+            if (firstName.isEmpty())
+                System.out.println("First name is required. Please enter your first name.\n");
+        } while (firstName.isEmpty());
 
-        System.out.print("Enter your last name: ");
-        String lastName = userInput.nextLine();
+        String lastName;
+        do {
+            System.out.print("Enter your last name: ");
+            lastName = userInput.nextLine().trim();
+            if (lastName.isEmpty())
+                System.out.println("Last name is required. Please enter your last name.\n");
+        } while (lastName.isEmpty());
 
         System.out.print("Enter your email (optional): ");
         String email = userInput.nextLine();
@@ -22,21 +32,31 @@ public class ECommerceApp {
         System.out.print("Enter your address (optional): ");
         String address = userInput.nextLine();
 
-        System.out.print("Enter your phone number: ");
-        String phone = userInput.nextLine();
+        String phone;
+        do {
+            System.out.print("Enter your phone number: ");
+            phone = userInput.nextLine().trim();
+            if (phone.isEmpty())
+                System.out.println("Phone number is required. Please enter your phone number.\n");
+        } while (phone.isEmpty());
 
-        // Validate and obtain user input for age
         int age = 0;
-        while (age <= 0) {
+        boolean validAge = false;
+        while (!validAge) {
             System.out.print("Enter your age: ");
-            try {
-                age = userInput.nextInt();
-                if (age < 0) {
-                    System.out.println("Age must be a positive number.");
+            String ageInput = userInput.nextLine().trim();
+            if (ageInput.isEmpty())
+                System.out.println("Age is required. Please enter your age.\n");
+            else {
+                try {
+                    age = Integer.parseInt(ageInput);
+                    if (age <= 0)
+                        System.out.println("Age must be a positive number.\n");
+                    else
+                        validAge = true;
+                } catch (Exception e) {
+                    System.out.println("Invalid input. Please enter a valid number for age.\n");
                 }
-            } catch (Exception e) {
-                System.out.println("Invalid input. Please enter a valid number for age.");
-                userInput.nextLine();
             }
         }
 
