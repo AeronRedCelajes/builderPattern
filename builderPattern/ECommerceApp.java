@@ -69,11 +69,11 @@ public class ECommerceApp {
         // Display the user information
         System.out.println();
         System.out.println("User Information Details: ");
-        System.out.println("First Name: " + user.getFirstName());
-        System.out.println("Last Name: " + user.getLastName());
-        System.out.println("Email: " + user.getEmail());
-        System.out.println("Address: " + user.getAddress());
-        System.out.println("Phone Number: " + user.getPhone());
-        System.out.println("Age: " + user.getAge());
+        System.out.println("First Name: " + user.firstName);
+        System.out.println("Last Name: " + user.lastName);
+        System.out.println("Email: " + user.email);
+        System.out.println("Address: " + user.address);
+        System.out.println("Phone Number: " + user.phone);
+        System.out.println("Age: " + user.age);
     }
 }

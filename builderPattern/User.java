@@ -18,31 +18,6 @@ public class User {
         this.age = builder.age;
     }
 
-    // Getters for the fields
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
     // Static nested class for building User objects
     protected static class UserBuilder {
         private final String firstName;
