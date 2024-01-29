@@ -45,7 +45,7 @@ public class ECommerceApp {
                 .address(address)
                 .build();
 
-        // Display user information
+        // Display the user information
         System.out.println();
         System.out.println("User Information Details: ");
         System.out.println("First Name: " + user.getFirstName());

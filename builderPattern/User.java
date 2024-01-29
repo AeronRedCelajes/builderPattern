@@ -18,7 +18,7 @@ public class User {
         this.age = builder.age;
     }
 
-    // Getters
+    // Getters for the fields
     public String getFirstName() {
         return firstName;
     }
