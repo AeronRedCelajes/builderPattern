@@ -4,9 +4,9 @@
 
 Imagine you're developing an e-commerce application where customers create accounts with varying levels of detail.
 
-Initially, you use a standard constructor for the User class:
+Initially, you use a standard constructor for the builderPattern.User class:
 
-<b>public User(String firstName, String lastName, String email,
+<b>public builderPattern.User(String firstName, String lastName, String email,
 <br>
            String address, String phone, int age) {
 <br>
