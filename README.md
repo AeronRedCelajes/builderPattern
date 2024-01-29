@@ -1,7 +1,4 @@
-## Problem
-
-<b>Problem Scenario</b>
-
+## Problem Scenario
 Imagine you're developing an e-commerce application where customers create accounts with varying levels of detail.
 
 Initially, you use a standard constructor for the User class:
