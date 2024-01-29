@@ -24,3 +24,4 @@ However, you encounter challenges:
 Implement solution using the Builder Pattern to address the issue.
 
 ## Class Diagram
+![UML Builder Design Pattern](https://github.com/AeronRedCelajes/builderPattern/assets/142370807/4a97a58c-9d09-4228-b0dc-5c6f85bb4e02)
