@@ -6,15 +6,12 @@ Imagine you're developing an e-commerce application where customers create accou
 
 Initially, you use a standard constructor for the User class:
 
-<b>public User(String firstName, String lastName, String email,
-<br>
+```
+public User(String firstName, String lastName, String email,
            String address, String phone, int age) {
-<br>
      // ...
-<br>
 }
-</b>
-
+```
 However, you encounter challenges:
 <ul>
 <li>Registration forms: It's cumbersome to ensure users enter all fields in the correct order, leading to errors and frustration.</li>
