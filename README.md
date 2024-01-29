@@ -20,7 +20,7 @@ However, you encounter challenges:
 <li>Registration forms: It's cumbersome to ensure users enter all fields in the correct order, leading to errors and frustration.</li>
 <li>Optional fields: Not all customers provide complete information, but the constructor forces them to.</li>
 <li>Data consistency: Changes to user profiles after registration can cause unexpected issues due to mutable fields.</li>
-Implement solution using the Builder Pattern to address the issue.
 </ul>
+Implement solution using the Builder Pattern to address the issue.
 
 ## Class Diagram
