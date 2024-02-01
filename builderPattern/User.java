@@ -8,6 +8,30 @@ public class User {
     protected final String phone;
     protected final int age;
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
     // Constructor with UserBuilder as input
     private User(UserBuilder builder) {
         this.firstName = builder.firstName;
@@ -20,30 +44,40 @@ public class User {
 
     // Static nested class for building User objects
     protected static class UserBuilder {
-        private final String firstName;
-        private final String lastName;
-        private String email = "";
-        private String address = "";
-        private final String phone;
-        private final int age;
+        private String firstName;
+        private String lastName;
+        private String email;
+        private String address;
+        private String phone;
+        private int age;
 
-        // Constructor with required parameters
-        public UserBuilder(String firstName, String lastName, String phone, int age) {
+        public UserBuilder firstName(String firstName) {
             this.firstName = firstName;
-            this.lastName = lastName;
-            this.phone = phone;
-            this.age = age;
+            return this;
         }
 
-        // Method to set optional email
+        public UserBuilder lastName(String lastName) {
+            this.lastName = lastName;
+            return this;
+        }
+
         public UserBuilder email(String email) {
             this.email = email;
             return this;
         }
 
-        // Method to set optional address
         public UserBuilder address(String address) {
             this.address = address;
+            return this;
+        }
+
+        public UserBuilder phone(String phone) {
+            this.phone = phone;
+            return this;
+        }
+
+        public UserBuilder age(int age) {
+            this.age = age;
             return this;
         }
 

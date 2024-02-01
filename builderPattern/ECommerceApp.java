@@ -61,9 +61,13 @@ public class ECommerceApp {
         }
 
         // Create a User object using UserBuilder
-        User user = new User.UserBuilder(firstName, lastName, phone, age)
-                .email(email)
+        User user = new User.UserBuilder()
+                .lastName(lastName)
+                .phone(phone)
+                .firstName(firstName)
+                .age(age)
                 .address(address)
+                .email(email)
                 .build();
 
         // Display the user information
